@@ -4,64 +4,100 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFAA66CC"
+    android:background="#F08080"
     tools:context="comviewmworkstation.google.sites.sudokusolver.MainActivity">
 
-
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="368dp"
         android:layout_height="495dp"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:orientation="vertical"
         tools:layout_editor_absoluteY="8dp"
         tools:layout_editor_absoluteX="8dp">
 
-        <Button
-            android:text="Easy"
-            android:textSize="35dp"
+        <TextView
+            android:text="Welcome to Sudoku Solver"
+            android:textSize="25dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:id="@+id/welcome"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:id="@+id/GameOptions"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <Button
+
+            android:textSize="15dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:id="@+id/easy"
             />
 
         <Button
             android:text="Medium"
-            android:textSize="30dp"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@color/colorAccent"
+            android:textSize="15dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:id="@+id/medium"/>
         <Button
-            android:text="Hard"
-            android:textSize="30dp"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
+            android:text="+"
+            android:background = "@drawable/roundedbutton"
+            android:textSize="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:id="@+id/hard"/>
         <Button
-            android:text="Custom"
-            android:textSize="30dp"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@color/colorAccent"
+            android:text="Easy"
+            android:textSize="15dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:id="@+id/custom"/>
         <Button
-            android:textSize="30dp"
             android:text="About us"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
+            android:textSize="15dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:id="@+id/about"/>
 
-    </LinearLayout>
+        <Button
+            android:text="Hard"
+            android:textSize="15dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/easy"
+            />
 
+        <Button
+
+            android:textSize="15dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/medium"/>
+        <Button
+            android:text="Custom"
+            android:textSize="15dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/hard"/>
+        <Button
+            android:textSize="15dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/custom"/>
+
+
+
+    </GridLayout>
+
+    </RelativeLayout>
 
 
 
